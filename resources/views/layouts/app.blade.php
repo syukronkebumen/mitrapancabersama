@@ -50,7 +50,7 @@
 
     {{-- ##### --}}
     <!-- Favicons -->
-    <link href="{{ asset('assets-aznews/img/logo/logo_narasipedia_fav.png') }}" rel="icon">
+    <link href="{{ asset('logo_narasipedia_fav.png') }}" rel="icon">
     <link href="{{ asset('img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
     <!-- Fonts -->
@@ -60,21 +60,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link rel="stylesheet" href="{{ asset('assets-aznews/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-aznews/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-aznews/css/ticker-style.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-aznews/css/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-aznews/css/slicknav.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-aznews/css/animate.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-aznews/css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-aznews/css/fontawesome-all.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-aznews/css/themify-icons.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-aznews/css/slick.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-aznews/css/nice-select.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-aznews/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-fe/vendor/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-fe/vendor/bootstrap-icons/bootstrap-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-fe/vendor/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-fe/vendor/aos/aos.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-fe/vendor/glightbox/css/glightbox.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-fe/vendor/swiper/swiper-bundle.min.css') }}">
 
     <!-- Main CSS File -->
-    <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets-fe/css/main.css') }}" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5321156983100513"
      crossorigin="anonymous"></script>
@@ -83,230 +77,196 @@
 <body>
 
     {{-- #### --}}
-    <header>
-        <!-- Header Start -->
-        <div class="header-area">
-            <div class="main-header ">
-                <div class="header-top black-bg d-none d-md-block">
-                    <div class="container">
-                        <div class="col-xl-12">
-                            <div class="row d-flex justify-content-between align-items-center">
-                                <div class="header-info-left">
-                                    <ul>
-                                        <li><img src="{{ asset('assets-aznews/img/icon/header_icon1.png') }}" alt="">34ºc, Sunny </li>
-                                        <li><img src="{{ asset('assets-aznews/img/icon/header_icon1.png') }}" alt="">{{ \Carbon\Carbon::now()->translatedFormat('l, jS M, Y') }}</li>
-                                    </ul>
-                                </div>
-                                <div class="header-info-right">
-                                    <ul class="header-social">
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li> <a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-mid d-none d-md-block">
-                    <div class="container">
-                        <div class="row d-flex align-items-center">
-                            <!-- Logo -->
-                            <div class="col-xl-3 col-lg-3 col-md-3">
-                                <div class="logo">
-                                    <a href="/"><img src="{{ asset('assets-aznews/img/logo/logo_narasipedia.png') }}" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="col-xl-9 col-lg-9 col-md-9">
-                                <div class="header-banner f-right ">
-                                    <img src="{{ asset('assets-aznews/img/hero/ads_homepage.jpg') }}" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-bottom header-sticky">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-xl-10 col-lg-10 col-md-12 header-flex">
-                                <!-- sticky -->
-                                <div class="sticky-logo">
-                                    <a href="/"><img src="{{ asset('assets-aznews/img/logo/logo_narasipedia.png') }}" alt=""></a>
-                                </div>
-                                <!-- Main-menu -->
-                                <div class="main-menu d-none d-md-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li><a href="/">Home</a></li>
-                                            <li><a href="/profil">Profil</a></li>
-                                            {{-- <li><a href="latest_news.html">Latest News</a></li> --}}
-                                            <li><a href="/kontak">Contact</a></li>
-                                            <li><a href="/berita">Berita</a></li>
-                                            {{-- <li><a href="#">Pages</a>
-                                                <ul class="submenu">
-                                                    <li><a href="elements.html">Element</a></li>
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-blog.html">Blog Details</a></li>
-                                                    <li><a href="details.html">Categori Details</a></li>
-                                                </ul>
-                                            </li> --}}
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-2 col-md-4">
-                                <div class="header-right-btn f-right d-none d-lg-block">
-                                    <i class="fas fa-search special-tag"></i>
-                                    <div class="search-box">
-                                        <form action="#">
-                                            <input type="text" placeholder="Search">
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Mobile Menu -->
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-md-none"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <a href="index.html" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.png" alt=""> -->
+            <h1>Mitrapanca<span>.</span></h1>
+        </a>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        <nav id="navbar" class="navbar">
+            <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="dropdown"><a href="#"><span>Dropdown</span> <i
+                    class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                        class="bi bi-chevron-down dropdown-indicator"></i></a>
+                    <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero">
+
+        <div class="info d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+                <h2 data-aos="fade-down">Selamat datang di <br><span>Mitra Panca Bersama</span></h2>
+                <p data-aos="fade-up">Mitra Panca Bersama merupakan konsultan konstruksi terpercaya yang menawarkan layanan perencanaan, pengawasan, dan manajemen proyek secara profesional. Kami siap membantu mewujudkan proyek berkualitas dengan solusi efisien, tepat waktu, dan sesuai anggaran.</p>
+                <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Mulai</a>
+            </div>
             </div>
         </div>
-        <!-- Header End -->
-    </header>
+        </div>
+
+        <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item active" style="background-image: url(assets-fe/img/hero-carousel/hero-carousel-1.jpg)">
+        </div>
+        <div class="carousel-item" style="background-image: url(assets-fe/img/hero-carousel/hero-carousel-2.jpg)"></div>
+        <div class="carousel-item" style="background-image: url(assets-fe/img/hero-carousel/hero-carousel-3.jpg)"></div>
+        <div class="carousel-item" style="background-image: url(assets-fe/img/hero-carousel/hero-carousel-4.jpg)"></div>
+        <div class="carousel-item" style="background-image: url(assets-fe/img/hero-carousel/hero-carousel-5.jpg)"></div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        </div>
+
+    </section><!-- End Hero Section -->
 
     <main>
         @yield('content')
     </main>
 
-    <footer>
-        <!-- Footer Start-->
-        <div class="footer-area footer-padding fix">
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-xl-5 col-lg-5 col-md-7 col-sm-12">
-                        <div class="single-footer-caption">
-                            <div class="single-footer-caption">
-                                <!-- logo -->
-                                <div class="footer-logo">
-                                    <a href="/"><img src="{{ asset('assets-aznews/img/logo/logo_narasipedia_footer.png') }}" alt=""></a>
-                                </div>
-                                <div class="footer-tittle">
-                                    <div class="footer-pera">
-                                        <p>
-                                            Narasipedia adalah pusat pengetahuan yang menyediakan informasi lengkap dan terpercaya untuk mendukung kebutuhan belajar Anda. Kami hadir untuk mempermudah akses terhadap berbagai wawasan dari beragam bidang, memberi Anda referensi berkualitas yang selalu bisa diandalkan. Dapatkan konten yang tersusun dengan cermat untuk memperkaya pengetahuan Anda secara praktis dan fleksibel.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- social -->
-                                <div class="footer-social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4  col-sm-6">
-                        <div class="single-footer-caption mt-60">
-                            <div class="footer-tittle">
-                                <h4>Narasipedia</h4>
-                                <p>Referensi Terpercaya untuk Generasi Digital!</p>
-                                <!-- Form -->
-                                <div class="footer-form">
-                                    <div id="mc_embed_signup">
-                                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                            method="get" class="subscribe_form relative mail_part">
-                                            <input type="email" name="email" id="newsletter-form-email" placeholder="Email Address"
-                                                class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
-                                                onblur="this.placeholder = ' Email Address '">
-                                            <div class="form-icon">
-                                                <button type="submit" name="submit" id="newsletter-submit"
-                                                    class="email_icon newsletter-submit button-contactForm"><img src="{{ asset('assets-aznews/img/logo/form-iocn.png') }}" alt=""></button>
-                                            </div>
-                                            <div class="mt-10 info"></div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
-                        
-                    </div>
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="footer-content position-relative">
+        <div class="container">
+            <div class="row">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-info">
+                <h3>Mitrapanca</h3>
+                <p>
+                    Lampung, IDN<br><br>
+                    <strong>Phone:</strong> +62 81223456<br>
+                    <strong>Email:</strong> info@mitrapancabersama.com<br>
+                </p>
+                <div class="social-links d-flex mt-3">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
                 </div>
+                </div>
+            </div><!-- End footer info column-->
+
+            <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div><!-- End footer links column-->
+
+            <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Product Management</a></li>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Graphic Design</a></li>
+                </ul>
+            </div><!-- End footer links column-->
+
+            <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Hic solutasetp</h4>
+                <ul>
+                <li><a href="#">Molestiae accusamus iure</a></li>
+                <li><a href="#">Excepturi dignissimos</a></li>
+                <li><a href="#">Suscipit distinctio</a></li>
+                <li><a href="#">Dilecta</a></li>
+                <li><a href="#">Sit quas consectetur</a></li>
+                </ul>
+            </div><!-- End footer links column-->
+
+            <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Nobis illum</h4>
+                <ul>
+                <li><a href="#">Ipsam</a></li>
+                <li><a href="#">Laudantium dolorum</a></li>
+                <li><a href="#">Dinera</a></li>
+                <li><a href="#">Trodelas</a></li>
+                <li><a href="#">Flexo</a></li>
+                </ul>
+            </div><!-- End footer links column-->
+
             </div>
         </div>
-        <!-- footer-bottom aera -->
-        <div class="footer-bottom-area">
-            <div class="container">
-                <div class="footer-border">
-                    <div class="row d-flex align-items-center justify-content-between">
-                        <div class="col-lg-6">
-                            <div class="footer-copy-right">
-                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                    Copyright &copy;<script>
-                                        document.write(new Date().getFullYear());
-                                    </script> All rights reserved | Narasipedia <i class="ti-heart" aria-hidden="true"></i> by <a href="#!">Narasipedia</a>
-                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="footer-menu f-right">
-                                <ul>
-                                    <li><a href="#">Terms of use</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </div>
+
+        <div class="footer-legal text-center position-relative">
+        <div class="container">
+            <div class="copyright">
+            &copy; Copyright <strong><span>mitrapancabersama</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/ -->
+            Designed by <a href="#!">dev.mitrapanca</a>
             </div>
         </div>
-        <!-- Footer End-->
+        </div>
+
     </footer>
+    <!-- End Footer -->
 
-    <!-- All JS Custom Plugins Link Here here -->
-    <script src="{{ asset('assets-aznews/js/vendor/modernizr-3.5.0.min.js') }}"></script>
-    <!-- Jquery, Popper, Bootstrap -->
-    <script src="{{ asset('assets-aznews/js/vendor/jquery-1.12.4.min.js') }}"></script>
-    <script src="{{ asset('assets-aznews/js/popper.min.js') }}"></script>
-    <script src="{{ asset('assets-aznews/js/bootstrap.min.js') }}"></script>
-    <!-- Jquery Mobile Menu -->
-    <script src="{{ asset('assets-aznews/js/jquery.slicknav.min.js') }}"></script>
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Jquery Slick , Owl-Carousel Plugins -->
-    <script src="{{ asset('assets-aznews/js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('assets-aznews/js/slick.min.js') }}"></script>
-    <!-- Date Picker -->
-    <script src="{{ asset('assets-aznews/js/gijgo.min.js') }}"></script>
-    <!-- One Page, Animated-HeadLin -->
-    <script src="{{ asset('assets-aznews/js/wow.min.js') }}"></script>
-    <script src="{{ asset('assets-aznews/js/animated.headline.js') }}"></script>
-    <script src="{{ asset('assets-aznews/js/jquery.magnific-popup.js') }}"></script>
+    <div id="preloader"></div>
 
-    <!-- Breaking New Pluging -->
-    <script src="{{ asset('assets-aznews/js/jquery.ticker.js') }}"></script>
-    <script src="{{ asset('assets-aznews/js/site.js') }}"></script>
-
-    <!-- Scrollup, nice-select, sticky -->
-    <script src="{{ asset('assets-aznews/js/jquery.scrollUp.min.js') }}"></script>
-    <script src="{{ asset('assets-aznews/js/jquery.nice-select.min.js') }}"></script>
-    <script src="{{ asset('assets-aznews/js/jquery.sticky.js') }}"></script>
-
-    <!-- contact js -->
-    <script src="{{ asset('assets-aznews/js/contact.js') }}"></script>
-    <script src="{{ asset('assets-aznews/js/jquery.form.js') }}"></script>
-    <script src="{{ asset('assets-aznews/js/jquery.validate.min.js') }}"></script>
-    <script src="{{ asset('assets-aznews/js/mail-script.js') }}"></script>
-    <script src="{{ asset('assets-aznews/js/jquery.ajaxchimp.min.js') }}"></script>
+    <script src="assets-fe/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets-fe/vendor/aos/aos.js"></script>
+    <script src="assets-fe/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets-fe/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets-fe/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets-fe/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets-fe/vendor/php-email-form/validate.js"></script>
 
     <!-- Jquery Plugins, main Jquery -->
-    <script src="{{ asset('assets-aznews/js/plugins.js') }}"></script>
-    <script src="{{ asset('assets-aznews/js/main.js') }}"></script>
+    <script src="{{ asset('assets-fe/js/main.js') }}"></script>
     @stack('script')
 </body>
 
