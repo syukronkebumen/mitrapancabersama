@@ -13,7 +13,7 @@
     <meta name="author" content="narasipedia">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link  href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
-    <link href="{{ asset('assets-aznews/img/logo/logo_narasipedia_fav.png') }}" rel="icon">
+    <link href="{{ asset('logo_mitrapancabersama.png') }}" rel="icon">
 
     <style type="text/css">
         .custom {

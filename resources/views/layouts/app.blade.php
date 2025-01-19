@@ -50,7 +50,7 @@
 
     {{-- ##### --}}
     <!-- Favicons -->
-    <link href="{{ asset('logo_narasipedia_fav.png') }}" rel="icon">
+    <link href="{{ asset('logo_mitrapancabersama.png') }}" rel="icon">
     <link href="{{ asset('img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
     <!-- Fonts -->

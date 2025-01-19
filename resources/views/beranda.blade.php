@@ -62,7 +62,7 @@
         <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-            <h2>Constructions</h2>
+            <h2>Mengapa Memilih Kami</h2>
             <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem
             dolore earum</p>
         </div>
@@ -756,8 +756,8 @@
     <section id="recent-blog-posts" class="recent-blog-posts">
         <div class="container" data-aos="fade-up"">
         <div class=" section-header">
-        <h2>Recent Blog Posts</h2>
-        <p>In commodi voluptatem excepturi quaerat nihil error autem voluptate ut et officia consequuntu</p>
+        <h2>Artikel</h2>
+        <p>Artikel yang sesuai untukmu</p>
         </div>
 
         <div class="row gy-5">
