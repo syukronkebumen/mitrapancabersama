@@ -41,23 +41,13 @@ class HomeController extends Controller
                                 'artikel.judul',
                                 'artikel.slug',
                                 'artikel.deskripsi',
-                                'artikel.gambar'
-                            )
-                            ->orderBy('artikel.created_at','DESC')
-                            ->get();
-
-        $artikelSide = Artikel::leftjoin('kategori_artikel','kategori_artikel.id','=','artikel.kategori_id')
-                            ->select(
-                                'kategori_artikel.nama as nama_kategori',
-                                'artikel.judul',
-                                'artikel.slug',
-                                'artikel.deskripsi',
                                 'artikel.gambar',
                                 'artikel.created_at'
                             )
-                            ->inRandomOrder('artikel.created_at','DESC')
-                            ->limit(5)
+                            ->orderBy('artikel.created_at','DESC')
+                            ->take(3)
                             ->get();
-        return view('beranda',compact('artikel','artikelSide'));
+
+        return view('beranda',compact('artikel'));
     }
 }

@@ -35,10 +35,10 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin/dashboard">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                <div class="sidebar-brand-icon">
+                    <img src="{{ asset('logo_mitrapancabersama.png') }}" alt="img" height="40px" width="40px">
                 </div>
-                <div class="sidebar-brand-text mx-3">NARASIPEDIA</div>
+                <div class="sidebar-brand-text mx-3">{{ env('APP_NAME') }}</div>
             </a>
 
             <!-- Divider -->
@@ -48,7 +48,8 @@
             <li class="nav-item {{ (\Request::route()->getName() == 'dashboard.index') ? 'active' : '' }}">
                 <a class="nav-link" href="/admin/dashboard">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>Dashboard</span>
+                </a>
             </li>
 
             <!-- Divider -->
@@ -58,6 +59,11 @@
             <div class="sidebar-heading">
                 Main
             </div>
+            <li class="nav-item {{ (\Request::route()->getName() == 'keunggulan.index') ? 'active' : '' }}">
+                <a class="nav-link" href="/admin/keunggulan">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Keunggulan</span></a>
+            </li>
             <li class="nav-item {{ (\Request::route()->getName() == 'artikel.index') ? 'active' : '' }}">
                 <a class="nav-link" href="/admin/artikel">
                     <i class="fas fa-fw fa-chart-area"></i>

@@ -13,6 +13,7 @@
 
 use App\Http\Controllers\Admin\Artikel\ArtikelController;
 use App\Http\Controllers\Admin\Dashboard\DashboardController as DashboardDashboardController;
+use App\Http\Controllers\Admin\Keunggulan\KeunggulanController;
 use App\Http\Controllers\Aduan\AduanController;
 use App\Http\Controllers\Auth\LoginController as AuthLoginController;
 use App\Http\Controllers\Berita\BeritaController;
@@ -74,6 +75,7 @@ Route::get('/kontak', [KontakController::class, 'index'])->name('kontak');
 Route::group(['prefix' => 'admin'], function () {
     Route::resource('/dashboard', DashboardDashboardController::class)->middleware('auth');
     Route::resource('/artikel', ArtikelController::class)->middleware('auth');
+    Route::resource('/keunggulan', KeunggulanController::class)->middleware('auth');
 });
 
 Route::get('/logout', [AuthLoginController::class, 'logout'])->name('logout');
