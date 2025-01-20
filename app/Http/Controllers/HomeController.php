@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Artikel;
 use App\Models\Candidate;
+use App\Models\Keunggulan;
+use App\Models\Layanan;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -35,6 +37,41 @@ class HomeController extends Controller
 
     public function index()
     {
+        $delay = 100;
+        $keunggulan = Keunggulan::orderBy('created_at', 'DESC')->get();
+        foreach ($keunggulan as $key => $value) {
+            $dataKeunggulan[] = [
+                'nama' => $value->nama,
+                'deskripsi' => $value->deskripsi,
+                'foto' => $value->foto,
+                'delay' => $delay
+            ];
+            
+            $delay += 100;
+        }
+
+        //layanan
+        $icons = [
+                'fa-mountain-city', 
+                'fa-arrow-up-from-ground-water',
+                'fa-compass-drafting',
+                'fa-trowel-bricks',
+                'fa-helmet-safety',
+                'fa-arrow-up-from-ground-water'
+            ];
+        $layanans = Layanan::orderBy('created_at','DESC')->get();
+        foreach ($layanans as $key => $item) {
+            $dataLayanan[] = [
+                'nama' => $item->nama,
+                'deskripsi' => $item->deskripsi,
+                'foto' => $item->foto,
+                'delay' => $delay,
+                'icon' =>$icons[$key]
+            ];
+
+            $delay += 100;
+        }
+
         $artikel = Artikel::leftjoin('kategori_artikel','kategori_artikel.id','=','artikel.kategori_id')
                             ->select(
                                 'kategori_artikel.nama as nama_kategori',
@@ -48,6 +85,6 @@ class HomeController extends Controller
                             ->take(3)
                             ->get();
 
-        return view('beranda',compact('artikel'));
+        return view('beranda',compact('artikel','dataKeunggulan','dataLayanan'));
     }
 }
