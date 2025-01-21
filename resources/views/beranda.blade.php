@@ -167,7 +167,7 @@
     </section><!-- End Alt Services Section -->
 
     <!-- ======= Features Section ======= -->
-    <section id="features" class="features section-bg">
+    {{-- <section id="features" class="features section-bg">
         <div class="container" data-aos="fade-up">
 
         <ul class="nav nav-tabs row  g-2 d-flex">
@@ -296,16 +296,16 @@
         </div>
 
         </div>
-    </section><!-- End Features Section -->
+    </section> --}}
+    <!-- End Features Section -->
 
     <!-- ======= Our Projects Section ======= -->
     <section id="projects" class="projects">
         <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-            <h2>Our Projects</h2>
-            <p>Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel architecto
-            accusamus fugit aut qui distinctio</p>
+            <h2>Portfolio</h2>
+            <p>Proyek yang Telah Kami Tangani</p>
         </div>
 
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
