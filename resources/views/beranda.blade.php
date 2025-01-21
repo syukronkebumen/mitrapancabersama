@@ -123,43 +123,40 @@
             data-aos-delay="100"></div>
 
             <div class="col-lg-5 d-flex flex-column justify-content-center">
-            <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus
-                laudantium. Soluta voluptate sed facere corporis dolores excepturi</p>
+            <h3>Pertanyaan yang Sering Diajukan</h3>
+            <p>Kami memahami bahwa Anda mungkin memiliki banyak pertanyaan sebelum memulai proyek dengan kami. Berikut adalah beberapa pertanyaan yang sering diajukan oleh klien kami, lengkap dengan jawabannya. Jika Anda memiliki pertanyaan tambahan, jangan ragu untuk menghubungi kamii</p>
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
                 <i class="bi bi-easel flex-shrink-0"></i>
                 <div>
-                <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
-                    non provident</p>
+                <h4><a href="" class="stretched-link">Apa saja layanan yang ditawarkan oleh Mitra Panca Bersama?</a></h4>
+                <p>Kami menawarkan berbagai layanan konsultasi konstruksi, termasuk perencanaan dan desain, manajemen proyek, studi kelayakan, pengawasan konstruksi, estimasi biaya, serta konsultasi legal dan perizinan. Anda dapat melihat detail lebih lengkap di halaman Layanan Kami</p>
                 </div>
             </div><!-- End Icon Box -->
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-patch-check flex-shrink-0"></i>
                 <div>
-                <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                    deleniti atque</p>
+                <h4><a href="" class="stretched-link">Berapa lama biasanya proses perencanaan dan desain?</a></h4>
+                <p>Durasi proses perencanaan dan desain bergantung pada skala dan kompleksitas proyek. Untuk proyek standar, biasanya membutuhkan waktu antara 2 hingga 6 minggu. Kami akan memberikan timeline spesifik setelah diskusi awal</p>
                 </div>
             </div><!-- End Icon Box -->
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-brightness-high flex-shrink-0"></i>
                 <div>
-                <h4><a href="" class="stretched-link">Dine Pad</a></h4>
-                <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus
-                    aut eligendi omnis</p>
+                <h4><a href="" class="stretched-link">Bagaimana cara mendapatkan penawaran harga?</a></h4>
+                <p>Anda dapat menghubungi kami melalui email, telepon, atau formulir kontak di website kami. Tim kami akan meninjau kebutuhan proyek Anda dan memberikan penawaran harga yang transparan dan kompetitif.
+
+                </p>
                 </div>
             </div><!-- End Icon Box -->
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-brightness-high flex-shrink-0"></i>
                 <div>
-                <h4><a href="" class="stretched-link">Tride clov</a></h4>
-                <p>Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit non aspernatur odit amet.
-                    Et eligendi</p>
+                <h4><a href="" class="stretched-link">Apakah proyek saya akan diawasi langsung oleh tim profesional?                </a></h4>
+                <p>Ya, setiap proyek akan diawasi oleh tim profesional kami yang berpengalaman untuk memastikan hasil kerja sesuai dengan standar kualitas dan spesifikasi yang disepakati. Kami juga menyediakan laporan rutin untuk kemajuan proyek</p>
                 </div>
             </div><!-- End Icon Box -->
 
