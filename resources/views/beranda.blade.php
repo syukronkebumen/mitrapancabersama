@@ -507,9 +507,8 @@
         <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-            <h2>Testimonials</h2>
-            <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia
-            reprehenderit sunt deleniti</p>
+            <h2>Testimoni</h2>
+            <p>Apa Kata Klien Kami?</p>
         </div>
 
         <div class="slides-2 swiper">
@@ -519,16 +518,15 @@
                 <div class="testimonial-wrap">
                 <div class="testimonial-item">
                     <img src="{{ asset('assets-fe/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
-                    <h3>Saul Goodman</h3>
-                    <h4>Ceo &amp; Founder</h4>
+                    <h3>Budi Santoso</h3>
+                    <h4>PT Arsitek Karya Nusantara</h4>
                     <div class="stars">
                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                         class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                     </div>
                     <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                    Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    Mitra Panca Bersama benar-benar memahami kebutuhan kami. Dari perencanaan hingga pengawasan proyek, semuanya dilakukan dengan profesionalisme tinggi. Kami sangat puas dengan hasil akhirnya!
                     <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                 </div>
@@ -539,16 +537,15 @@
                 <div class="testimonial-wrap">
                 <div class="testimonial-item">
                     <img src="{{ asset('assets-fe/img/testimonials/testimonials-2.jpg') }}" class="testimonial-img" alt="">
-                    <h3>Sara Wilsson</h3>
-                    <h4>Designer</h4>
+                    <h3>Sarah Widya</h3>
+                    <h4>CV Mega Bangun Sejahtera</h4>
                     <div class="stars">
                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                         class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                     </div>
                     <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                    quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    Tim mereka sangat berpengalaman dan komunikatif. Semua tahap proyek kami dikelola dengan efisien, dan hasilnya melampaui ekspektasi. Sangat direkomendasikan!
                     <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                 </div>
@@ -559,16 +556,15 @@
                 <div class="testimonial-wrap">
                 <div class="testimonial-item">
                     <img src="{{ asset('assets-fe/img/testimonials/testimonials-3.jpg') }}" class="testimonial-img" alt="">
-                    <h3>Jena Karlis</h3>
-                    <h4>Store Owner</h4>
+                    <h3>Ahmad Faisal</h3>
+                    <h4>Pembangunan Gedung Perkantoran</h4>
                     <div class="stars">
                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                         class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                     </div>
                     <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
-                    tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    Pendekatan inovatif mereka dalam menggunakan teknologi konstruksi sangat membantu mempercepat proses dan mengurangi biaya. Terima kasih atas kerja samanya!
                     <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                 </div>
@@ -579,37 +575,15 @@
                 <div class="testimonial-wrap">
                 <div class="testimonial-item">
                     <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                    <h3>Matt Brandon</h3>
-                    <h4>Freelancer</h4>
+                    <h3>Lisa Pratiwi</h3>
+                    <h4>Renovasi dan Desain Interior Rumah</h4>
                     <div class="stars">
                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                         class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                     </div>
                     <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
-                    minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                </div>
-                </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-                <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                    <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                    <h3>John Larson</h3>
-                    <h4>Entrepreneur</h4>
-                    <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                    </div>
-                    <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim
-                    culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum
-                    quid.
+                    Layanan konsultasi dan desain mereka luar biasa. Detailnya sangat diperhatikan, dan hasilnya sempurna. Saya pasti akan menggunakan layanan mereka lagi di masa depan
                     <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                 </div>
