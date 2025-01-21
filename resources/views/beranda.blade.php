@@ -124,7 +124,7 @@
 
             <div class="col-lg-5 d-flex flex-column justify-content-center">
             <h3>Pertanyaan yang Sering Diajukan</h3>
-            <p>Kami memahami bahwa Anda mungkin memiliki banyak pertanyaan sebelum memulai proyek dengan kami. Berikut adalah beberapa pertanyaan yang sering diajukan oleh klien kami, lengkap dengan jawabannya. Jika Anda memiliki pertanyaan tambahan, jangan ragu untuk menghubungi kamii</p>
+            <p>Kami memahami bahwa Anda mungkin memiliki banyak pertanyaan sebelum memulai proyek dengan kami.</p>
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
                 <i class="bi bi-easel flex-shrink-0"></i>
