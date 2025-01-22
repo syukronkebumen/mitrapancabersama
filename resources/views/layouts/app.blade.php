@@ -130,7 +130,7 @@
             <div class="row justify-content-center">
             <div class="col-lg-6 text-center">
                 <h2 data-aos="fade-down">Selamat datang di <br><span>Mitra Panca Bersama</span></h2>
-                <p data-aos="fade-up">Mitra Panca Bersama merupakan konsultan konstruksi terpercaya yang menawarkan layanan perencanaan, pengawasan, dan manajemen proyek secara profesional. Kami siap membantu mewujudkan proyek berkualitas dengan solusi efisien, tepat waktu, dan sesuai anggaran.</p>
+                <p data-aos="fade-up">Kami siap membantu mewujudkan proyek berkualitas dengan solusi efisien, tepat waktu, dan sesuai anggaran.</p>
                 <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Mulai</a>
             </div>
             </div>
