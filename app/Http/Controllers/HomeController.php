@@ -85,6 +85,20 @@ class HomeController extends Controller
                             ->take(3)
                             ->get();
 
-        return view('beranda',compact('artikel','dataKeunggulan','dataLayanan'));
+        foreach ($artikel as $key => $item) {
+            $dataArtikel[] = [
+                'nama_kategori' => $item->nama_kategori,
+                'judul' => $item->judul,
+                'slug' => $item->slug,
+                'deskripsi' => $item->deskripsi,
+                'gambar' => $item->gambar,
+                'created_at' => $item->created_at,
+                'delay' => $delay
+            ];
+
+            $delay += 100;
+        }
+        
+        return view('beranda',compact('dataArtikel','dataKeunggulan','dataLayanan'));
     }
 }
