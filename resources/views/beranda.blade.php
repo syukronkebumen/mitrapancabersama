@@ -312,11 +312,11 @@
             data-portfolio-sort="original-order">
 
             <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-remodeling">Remodeling</li>
-            <li data-filter=".filter-construction">Construction</li>
-            <li data-filter=".filter-repairs">Repairs</li>
-            <li data-filter=".filter-design">Design</li>
+            <li data-filter="*" class="filter-active">Senua</li>
+            <li data-filter=".filter-remodeling">Renovasi</li>
+            <li data-filter=".filter-construction">Konstruksi</li>
+            <li data-filter=".filter-repairs">Perbaikan</li>
+            <li data-filter=".filter-design">Arsitek</li>
             </ul><!-- End Projects Filters -->
 
             <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
