@@ -14,7 +14,7 @@
     <meta name="author" content="mitrapancabersama">
 
     <!-- Open Graph Meta Tags untuk Social Media -->
-    <meta property="og:title" content="@yield('og_title', '{{ env('APP_NAME') }}')">
+    <meta property="og:title" content="@yield('og_title', `{{ env('APP_NAME') }}`)">
     <meta property="og:description" content="@yield('og_description', 'Mitra Panca Bersama - Jasa konsultasi konstruksi profesional yang menyediakan solusi terbaik untuk perencanaan, pengawasan, dan manajemen proyek konstruksi. Kami memastikan kualitas, efisiensi, dan kepuasan klien dalam setiap pekerjaan.') ">
     <meta property="og:image" content="@yield('og_image', url('logo_mitrapancabersama.png'))">
     <meta property="og:url" content="@yield('og_url', url()->current())">
