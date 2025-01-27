@@ -1,95 +1,96 @@
 @extends('layouts.app')
 
 @section('content')
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets-fe/img/breadcrumbs-bg.jpg');">
+        <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
-<div class="about-area">
-    <div class="container">
-            <!-- Hot Aimated News Tittle-->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="trending-tittle">
-                        <strong>Trending now</strong>
-                        <!-- <p>Rem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                        <div class="trending-animated">
-                            <ul id="js-news" class="js-hidden">
-                                @foreach ($artikel as $item)
-                                    <li class="news-item">{{ $item->judul }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                        
-                    </div>
+        <h2>Profil</h2>
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Profil</li>
+        </ol>
+
+        </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+
+        <div class="row position-relative">
+
+            <div class="col-lg-7 about-img" style="background-image: url({{asset('storage/'.$profile->foto)}});"></div>
+
+            <div class="col-lg-7">
+            <h2>{{ $profile->judul }}</h2>
+            <div class="our-story">
+                <p>{!! $profile->deskripsi !!}</p>
+
+                <div class="watch-video d-flex align-items-center position-relative">
+                <i class="bi bi-play-circle"></i>
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox stretched-link">Watch Video</a>
                 </div>
             </div>
-           <div class="row">
-                <div class="col-lg-8">
-                    <!-- Trending Tittle -->
-                            <div class="about-right mb-90">
-                                <div class="about-img">
-                                    <img src="{{ asset('assets-aznews/img/post/profile.jpg') }}" alt="">
-                                </div>
-                                <div class="section-tittle mb-30 pt-30">
-                                    <h3>About Us</h3>
-                                </div>
-                                <div class="about-prea">
-                                    <p class="about-pera1 mb-25">
-                                        Narasipedia adalah platform pengetahuan yang dirancang untuk menjadi jembatan antara pembaca dan berbagai informasi yang dapat diakses dengan mudah dan cepat. Dengan visi untuk menjadi sumber informasi terpercaya, kami menyajikan konten-konten berkualitas dari berbagai bidang, termasuk teknologi, sains, sejarah, budaya, dan banyak lagi. Setiap artikel di Narasipedia dirancang dengan teliti dan disusun oleh tim yang berdedikasi, memastikan bahwa setiap pembaca mendapatkan informasi yang akurat dan bermanfaat. Kami memahami bahwa kebutuhan informasi semakin berkembang, dan Narasipedia hadir untuk membantu Anda mendapatkan wawasan baru di tengah kesibukan sehari-hari. Melalui navigasi yang intuitif dan desain yang ramah pengguna, kami ingin menjadikan proses belajar lebih mudah dan menyenangkan. Temukan informasi yang Anda cari dan perluas pengetahuan Anda tanpa batas, hanya di Narasipedia.</p>
-                                </div>
-                            </div>
-                </div>
-                <div class="col-lg-4">
-                    <!-- Section Tittle -->
-                    <div class="section-tittle mb-40">
-                        <h3>Follow Us</h3>
-                    </div>
-                    <!-- Flow Socail -->
-                    <div class="single-follow mb-45">
-                        <div class="single-box">
-                            <div class="follow-us d-flex align-items-center">
-                                <div class="follow-social">
-                                    <a href="#"><img src="{{ asset('assets-aznews/img/news/icon-fb.png') }}" alt=""></a>
-                                </div>
-                                <div class="follow-count">  
-                                    <span>8,045</span>
-                                    <p>Fans</p>
-                                </div>
-                            </div> 
-                            <div class="follow-us d-flex align-items-center">
-                                <div class="follow-social">
-                                    <a href="#"><img src="{{ asset('assets-aznews/img/news/icon-tw.png') }}" alt=""></a>
-                                </div>
-                                <div class="follow-count">
-                                    <span>8,045</span>
-                                    <p>Fans</p>
-                                </div>
-                            </div>
-                                <div class="follow-us d-flex align-items-center">
-                                <div class="follow-social">
-                                    <a href="#"><img src="{{ asset('assets-aznews/img/news/icon-ins.png') }}" alt=""></a>
-                                </div>
-                                <div class="follow-count">
-                                    <span>8,045</span>
-                                    <p>Fans</p>
-                                </div>
-                            </div>
-                            <div class="follow-us d-flex align-items-center">
-                                <div class="follow-social">
-                                    <a href="#"><img src="{{ asset('assets-aznews/img/news/icon-yo.png') }}" alt=""></a>
-                                </div>
-                                <div class="follow-count">
-                                    <span>8,045</span>
-                                    <p>Fans</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- New Poster -->
-                    <div class="news-poster d-none d-lg-block">
-                        <img src="assets/img/news/news_card.jpg" alt="">
-                    </div>
-                </div>
-           </div>
-    </div>
-</div>
+            </div>
 
+        </div>
+
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Stats Counter Section ======= -->
+    <section id="stats-counter" class="stats-counter section-bg">
+        <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+                <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+                <div>
+                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                    class="purecounter"></span>
+                <p>Happy Clients</p>
+                </div>
+            </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+                <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
+                <div>
+                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                    class="purecounter"></span>
+                <p>Projects</p>
+                </div>
+            </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+                <i class="bi bi-headset color-green flex-shrink-0"></i>
+                <div>
+                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+                    class="purecounter"></span>
+                <p>Hours Of Support</p>
+                </div>
+            </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+                <i class="bi bi-people color-pink flex-shrink-0"></i>
+                <div>
+                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+                    class="purecounter"></span>
+                <p>Hard Workers</p>
+                </div>
+            </div>
+            </div><!-- End Stats Item -->
+
+        </div>
+
+        </div>
+    </section><!-- End Stats Counter Section -->
 @endsection

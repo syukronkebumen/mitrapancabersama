@@ -15,6 +15,7 @@ use App\Http\Controllers\Admin\Artikel\ArtikelController;
 use App\Http\Controllers\Admin\Dashboard\DashboardController as DashboardDashboardController;
 use App\Http\Controllers\Admin\Keunggulan\KeunggulanController;
 use App\Http\Controllers\Admin\Layanan\LayananController;
+use App\Http\Controllers\Admin\Profile\ProfileController;
 use App\Http\Controllers\Auth\LoginController as AuthLoginController;
 use App\Http\Controllers\Berita\BeritaController;
 use App\Http\Controllers\DashboardController;
@@ -42,8 +43,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 // Profil
-Route::get('/profil', [ProfilController::class, 'index'])->name('profil');
-Route::get('/berita', [BeritaController::class, 'index'])->name('berita');
+Route::get('/profiles', [ProfilController::class, 'index'])->name('profiles');
+Route::get('/articles', [BeritaController::class, 'index'])->name('articles');
 Route::get('/detail/{slug}', [BeritaController::class, 'show'])->name('berita-detail');
 
 Route::get('/kontak', [KontakController::class, 'index'])->name('kontak');
@@ -53,6 +54,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::resource('/artikel', ArtikelController::class)->middleware('auth');
     Route::resource('/keunggulan', KeunggulanController::class)->middleware('auth');
     Route::resource('/layanan', LayananController::class)->middleware('auth');
+    Route::resource('/profile', ProfileController::class)->middleware('auth');
 });
 
 Route::get('/logout', [AuthLoginController::class, 'logout'])->name('logout');

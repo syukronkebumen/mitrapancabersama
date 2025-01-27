@@ -2,189 +2,73 @@
 
 @section('content')
 
-<section class="blog_area section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mb-5 mb-lg-0">
-                <div class="blog_left_sidebar">
-                    @foreach ($artikel as $item)
-                        <article class="blog_item">
-                            <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="{{ '/storage/'.$item->gambar }}" alt="">
-                                <a href="#" class="blog_item_date">
-                                    <h3>{{ \Carbon\Carbon::parse($item->created_at)->format('d') }}</h3>
-                                    <p>{{ \Carbon\Carbon::parse($item->created_at)->format('M') }}</p>
-                                </a>
-                            </div>
+<!-- ======= Breadcrumbs ======= -->
+<div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets-fe/img/breadcrumbs-bg.jpg');">
+    <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
-                            <div class="blog_details">
-                                <a class="d-inline-block" href="{{ '/detail/'.$item->slug }}">
-                                    <h2>{{ $item->judul }}</h2>
-                                </a>
-                                <p>{!! \Illuminate\Support\Str::limit($item->deskripsi, 157, ' (...)') !!}</p>
-                                <ul class="blog-info-link">
-                                    <li><a href="#"><i class="fa fa-user"></i> by : admin</a></li>
-                                </ul>
-                            </div>
-                        </article>
-                    @endforeach
+      <h2>Blog</h2>
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li>Blog</li>
+      </ol>
 
-                    {{ $artikel->links('berita.pagination') }}
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="blog_right_sidebar">
-                    <aside class="single_sidebar_widget search_widget">
-                        <form action="#">
-                            <div class="form-group">
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder='Search Keyword'
-                                        onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Search Keyword'">
-                                    <div class="input-group-append">
-                                        <button class="btns" type="button"><i class="ti-search"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                                type="submit">Search</button>
-                        </form>
-                    </aside>
-
-                    <aside class="single_sidebar_widget post_category_widget">
-                        <h4 class="widget_title">Category</h4>
-                        <ul class="list cat-list">
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Resaurant food</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Travel news</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Modern technology</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Product</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Inspiration</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Health Care</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </aside>
-
-                    <aside class="single_sidebar_widget popular_post_widget">
-                        <h3 class="widget_title">Recent Post</h3>
-                        @foreach ($artikelSide as $item)
-                            <div class="media post_item">
-                                <img src="{{ '/storage/'.$item->gambar }}" width="80" height="80" alt="post">
-                                <div class="media-body">
-                                    <a href="single-blog.html">
-                                        <h3>{{ $item->judul }}</h3>
-                                    </a>
-                                    <p>{{ \Carbon\Carbon::parse($item->created_at)->format('d M Y') }}</p>
-                                </div>
-                            </div>
-                        @endforeach
-                    </aside>
-                    <aside class="single_sidebar_widget tag_cloud_widget">
-                        <h4 class="widget_title">Tag Clouds</h4>
-                        <ul class="list">
-                            <li>
-                                <a href="#">project</a>
-                            </li>
-                            <li>
-                                <a href="#">love</a>
-                            </li>
-                            <li>
-                                <a href="#">technology</a>
-                            </li>
-                            <li>
-                                <a href="#">travel</a>
-                            </li>
-                            <li>
-                                <a href="#">restaurant</a>
-                            </li>
-                            <li>
-                                <a href="#">life style</a>
-                            </li>
-                            <li>
-                                <a href="#">design</a>
-                            </li>
-                            <li>
-                                <a href="#">illustration</a>
-                            </li>
-                        </ul>
-                    </aside>
-
-
-                    <aside class="single_sidebar_widget instagram_feeds">
-                        <h4 class="widget_title">Instagram Feeds</h4>
-                        <ul class="instagram_row flex-wrap">
-                            <li>
-                                <a href="#">
-                                    <img class="img-fluid" src="assets/img/post/post_5.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img class="img-fluid" src="assets/img/post/post_6.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img class="img-fluid" src="assets/img/post/post_7.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img class="img-fluid" src="assets/img/post/post_8.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img class="img-fluid" src="assets/img/post/post_9.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img class="img-fluid" src="assets/img/post/post_10.png" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </aside>
-
-
-                    <aside class="single_sidebar_widget newsletter_widget">
-                        <h4 class="widget_title">Newsletter</h4>
-
-                        <form action="#">
-                            <div class="form-group">
-                                <input type="email" class="form-control" onfocus="this.placeholder = ''"
-                                    onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
-                            </div>
-                            <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                                type="submit">Subscribe</button>
-                        </form>
-                    </aside>
-                </div>
-            </div>
-        </div>
     </div>
-</section>
+  </div><!-- End Breadcrumbs -->
+
+  <!-- ======= Blog Section ======= -->
+  <section id="blog" class="blog">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4 posts-list">
+        @foreach ($artikel as $item)
+        <div class="col-xl-4 col-md-6">
+          <div class="post-item position-relative h-100">
+
+            <div class="post-img position-relative overflow-hidden">
+              <img src="{{ asset('storage/'.$item->gambar) }}" class="img-fluid" alt="">
+              <span class="post-date">December 12</span>
+            </div>
+
+            <div class="post-content d-flex flex-column">
+
+              <h3 class="post-title">{{ $item->judul }}</h3>
+
+              <div class="meta d-flex align-items-center">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-person"></i> <span class="ps-2">admin</span>
+                </div>
+                <span class="px-3 text-black-50">/</span>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-folder2"></i> <span class="ps-2">{{ $item->nama_kategori }}</span>
+                </div>
+              </div>
+
+              <p>
+                {!! Str::limit($item->deskripsi, 164) !!}
+              </p>
+
+              <hr>
+
+              <a href="blog-details.html" class="readmore stretched-link"><span>Lihat</span><i
+                  class="bi bi-arrow-right"></i></a>
+
+            </div>
+
+          </div>
+        </div><!-- End post list item -->
+        @endforeach
+
+      </div><!-- End blog posts list -->
+
+      <div class="blog-pagination">
+        <ul class="justify-content-center">
+          <li><a href="#">1</a></li>
+          <li class="active"><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+        </ul>
+      </div><!-- End blog pagination -->
+
+    </div>
+  </section><!-- End Blog Section -->
 
 @endsection

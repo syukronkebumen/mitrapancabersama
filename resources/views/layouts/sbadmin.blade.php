@@ -74,6 +74,11 @@
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Artikel</span></a>
             </li>
+            <li class="nav-item {{ (\Request::route()->getName() == 'profile.index') ? 'active' : '' }}">
+                <a class="nav-link" href="/admin/profile">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Profil</span></a>
+            </li>
 
             <!-- Divider -->
             {{-- <hr class="sidebar-divider"> --}}
