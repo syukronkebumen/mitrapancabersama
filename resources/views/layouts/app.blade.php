@@ -95,7 +95,7 @@
             <li><a href="/profiles" class="{{ (\Request::route()->getName() == 'profiles') ? 'active' : '' }}">About</a></li>
             {{-- <li><a href="services.html">Services</a></li> --}}
             {{-- <li><a href="projects.html">Projects</a></li> --}}
-            <li><a href="/articles">Blog</a></li>
+            <li><a href="/articles" class="{{ (\Request::route()->getName() == 'articles') ? 'active' : '' }}">Blog</a></li>
             {{-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i
                     class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
@@ -115,7 +115,7 @@
                 <li><a href="#">Dropdown 4</a></li>
                 </ul>
             </li> --}}
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/contact" class="{{ (\Request::route()->getName() == 'kontak') ? 'active' : '' }}">Contact</a></li>
             </ul>
         </nav><!-- .navbar -->
 
