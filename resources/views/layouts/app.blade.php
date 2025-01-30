@@ -138,7 +138,7 @@
                 <h3>Mitrapanca</h3>
                 <p>
                     Lampung, IDN<br><br>
-                    <strong>Phone:</strong> +62 81223456<br>
+                    <strong>Phone:</strong> +62 813-8292-9707<br>
                     <strong>Email:</strong> info@mitrapancabersama.com<br>
                 </p>
                 <div class="social-links d-flex mt-3">

@@ -40,7 +40,7 @@
           <div class="info-item  d-flex flex-column justify-content-center align-items-center">
             <i class="bi bi-telephone"></i>
             <h3>Hubungi</h3>
-            <p>+62 8123456789</p>
+            <p>+62 813-8292-9707</p>
           </div>
         </div><!-- End Info Item -->
 
