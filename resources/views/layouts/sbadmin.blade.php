@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Narasipedia - Admin Dashboard</title>
+    <title>Mitrapancabersama - Admin Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{ asset('assets-backend/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
@@ -241,7 +241,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; <a href="#!">narasipedia.co.id</a></span>
+                        <span>Copyright &copy; <a href="#!">mitrapancabersama.com</a></span>
                     </div>
                 </div>
             </footer>
