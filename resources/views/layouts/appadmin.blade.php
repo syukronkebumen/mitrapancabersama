@@ -8,9 +8,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-    <meta name="description" content="Narasipedia - Sumber informasi terlengkap yang menyajikan artikel, panduan, dan pengetahuan terkini di berbagai bidang. Jelajahi konten yang informatif dan bermanfaat untuk menambah wawasan Anda.">
-    <meta name="keywords" content="Narasipedia, informasi, panduan, pengetahuan, artikel terbaru, sumber informasi, edukasi, ilmu pengetahuan, artikel informatif, wawasan, edukasi online, pengetahuan umum">
-    <meta name="author" content="narasipedia">
+    <meta name="description" content="Mitra Panca Bersama - Jasa konsultasi konstruksi profesional yang menyediakan solusi terbaik untuk perencanaan, pengawasan, dan manajemen proyek konstruksi. Kami memastikan kualitas, efisiensi, dan kepuasan klien dalam setiap pekerjaan.">
+    <meta name="keywords" content="Mitrapancabersama, jasa konsultasi konstruksi, perencanaan konstruksi, pengawasan proyek konstruksi, manajemen proyek konstruksi, konsultan konstruksi terpercaya, solusi konstruksi profesional, jasa konsultan pembangunan, konsultasi proyek infrastruktur, jasa konsultan perencanaan bangunan">
+    <meta name="author" content="mitrapancabersama">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link  href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
     <link href="{{ asset('logo_mitrapancabersama.png') }}" rel="icon">
