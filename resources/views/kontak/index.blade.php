@@ -2,75 +2,86 @@
 
 @section('content')
 
-<section class="contact-section">
-    <div class="container">
-        <div class="d-sm-block mb-5 pb-4">
-            <div class="row gy-4 mt-1">
-                <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49596.63572812957!2d105.47558337360482!3d-5.046100121786304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40909806a969bf%3A0xe859e794183b7811!2sDinas%20Kominfo%20Kabupaten%20Lampung%20Timur!5e1!3m2!1sen!2sid!4v1724481543981!5m2!1sen!2sid" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div><!-- End Google Maps -->
-            </div>
-        </div>
+<!-- ======= Breadcrumbs ======= -->
+<div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets-fe/img/breadcrumbs-bg.jpg');">
+    <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
+      <h2>Kontak</h2>
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li>Kontak</li>
+      </ol>
 
-        <div class="row">
-            <div class="col-12">
-                <h2 class="contact-title">Get in Touch</h2>
-            </div>
-            <div class="col-lg-8">
-                <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="form-group">
-                                <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=" Enter Message"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-group">
-                                <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group mt-3">
-                        <button type="submit" class="button button-contactForm boxed-btn">Send</button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-lg-3 offset-lg-1">
-                <div class="media contact-info">
-                    <span class="contact-info__icon"><i class="ti-home"></i></span>
-                    <div class="media-body">
-                        <h3>Sukadana, Lampung Timur.</h3>
-                        <p>Sukadana, 91770</p>
-                    </div>
-                </div>
-                <div class="media contact-info">
-                    <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-                    <div class="media-body">
-                        <h3>+62 1234 9876</h3>
-                        <p>Senin - Minggu pukul 09.00 hingga 18.00</p>
-                    </div>
-                </div>
-                <div class="media contact-info">
-                    <span class="contact-info__icon"><i class="ti-email"></i></span>
-                    <div class="media-body">
-                        <h3>narasipedia@gmail.com</h3>
-                        <p>Kirimkan pertanyaan Anda kapan saja!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-</section>
+  </div><!-- End Breadcrumbs -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <div class="info-item  d-flex flex-column justify-content-center align-items-center">
+            <i class="bi bi-map"></i>
+            <h3>Alamat</h3>
+            <p>Lampung, Indonesia</p>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="col-lg-3 col-md-6">
+          <div class="info-item d-flex flex-column justify-content-center align-items-center">
+            <i class="bi bi-envelope"></i>
+            <h3>Email</h3>
+            <p>info@mitrapancabersama.com</p>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="col-lg-3 col-md-6">
+          <div class="info-item  d-flex flex-column justify-content-center align-items-center">
+            <i class="bi bi-telephone"></i>
+            <h3>Hubungi</h3>
+            <p>+62 8123456789</p>
+          </div>
+        </div><!-- End Info Item -->
+
+      </div>
+
+      <div class="row gy-4 mt-1">
+
+        <div class="col-lg-6 ">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127101.57230485204!2d105.18833476867452!3d-5.42849561559404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40da46f3aa6fbf%3A0x3039d80b220cc40!2sBandar%20Lampung%2C%20Bandar%20Lampung%20City%2C%20Lampung!5e0!3m2!1sen!2sid!4v1738206064067!5m2!1sen!2sid"
+            frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="col-lg-6">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row gy-4">
+              <div class="col-lg-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-lg-6 form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div><!-- End Contact Form -->
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
 
 @endsection

@@ -47,7 +47,7 @@ Route::get('/profiles', [ProfilController::class, 'index'])->name('profiles');
 Route::get('/articles', [BeritaController::class, 'index'])->name('articles');
 Route::get('/detail/{slug}', [BeritaController::class, 'show'])->name('berita-detail');
 
-Route::get('/kontak', [KontakController::class, 'index'])->name('kontak');
+Route::get('/contact', [KontakController::class, 'index'])->name('kontak');
 
 Route::group(['prefix' => 'admin'], function () {
     Route::resource('/dashboard', DashboardDashboardController::class)->middleware('auth');
